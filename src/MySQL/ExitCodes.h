@@ -1,0 +1,86 @@
+#pragma once
+
+enum class ExitCode
+{
+	success = 0,
+	cli = 100,
+	connection = 200,
+
+	data = 300,
+		noModelRunMeta = 310,
+
+		indexerSqlError = 320,
+		noModelIndexers = 321,
+
+		indexSqlError = 330,
+		noIndexes = 331,
+
+		structureSqlError = 340,
+		noReachStructure = 341,
+		reachSqlError = 342,
+		noReaches = 343,
+
+		parameterSetSqlError = 350,
+		landParameterSqlError = 351,
+		soilLandParameterSqlError = 352,
+		soilParameterSqlError = 353,
+		reachParameterSqlError = 354,
+		reachLandParameterSqlError = 355,
+		soilFluxSqlError = 356,
+		noParameterSet = 357,
+		noLandParameters = 358,
+		noSoilLandParameters = 359,
+		noSoilParameters = 360,
+		noReachParameters = 361,
+		noReachLandParameters = 362,
+		noSoilFluxParameters = 363,
+
+		inputReachAlignment = 370,
+		reachIndexSqlError = 371,
+		noInputReachIndex = 372,
+		inputDataSqlError = 373,
+		noInputData = 374,
+		absReachIndexSqlError = 375,
+		noAbsReachIndex = 376,
+		absDataSqlError = 377,
+		noAbsData = 378,
+		tooFewTimesteps = 379,
+		petReachIndexSqlError = 380,
+		noPetReachIndex = 381,
+		petDataSqlError = 382,
+		noPetData = 383,
+		dropTempTableSqlError = 384,
+		createTempTableSqlError = 385,
+		updateSolarRadiationSqlError = 386,
+		effReachIndexSqlError = 387,
+		noEffReachIndex = 388,
+		effDataSqlError = 389,
+		noEffData = 390,
+		fertReachIndexSqlError = 391,
+		noFertReachIndex = 392,
+		fertDataSqlError = 393,
+		noFertData = 394,
+		depReachIndexSqlError = 395,
+		noDepReachIndex = 396,
+		depDataSqlError = 397,
+		noDepData = 398,
+
+		invalidIndexers = 590,
+		invalidModel = 591,
+
+	run = 600,
+		resultsExist = 601,
+
+	insert = 800,
+		insertReachResults = 810,
+		insertSoilResults = 811,
+		insertLandResults = 812,
+		dropTables = 813,
+		createTables = 814,
+		startTransaction = 815,
+		commit = 816,
+		deleteFailed = 817,
+		insertSolarRadiation = 818,
+
+	abort = 900
+};

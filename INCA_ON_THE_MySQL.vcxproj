@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9D87986F-7658-4D0F-8634-6BFDF65EBB9F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dan\source\repos\incapersist\inca-on-the-mysql\src\libraries\tinyxml2;C:\Users\Dan\source\repos\incapersist\inca-on-the-mysql\src\include;C:\Users\Dan\source\repos\incapersist\inca-on-the-mysql\src\MySQL;C:\Users\Dan\source\repos\incapersist\inca-on-the-mysql\src\libraries\mysql-win\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STATIC_CONCPP</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\Dan\source\repos\incapersist\inca-on-the-mysql\src\libraries\mysql-win\lib64;C:\Users\Dan\source\repos\incapersist\inca-on-the-mysql\src\libraries\mysql-win\lib64\vs14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn8-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CAbsSeries.cpp" />
+    <ClCompile Include="src\CBaseSeries.cpp" />
+    <ClCompile Include="src\CCellPar.cpp" />
+    <ClCompile Include="src\CDepSeries.cpp" />
+    <ClCompile Include="src\CEffSeries.cpp" />
+    <ClCompile Include="src\CErrorMatrix.cpp" />
+    <ClCompile Include="src\CFertSeries.cpp" />
+    <ClCompile Include="src\CGrowthSeries.cpp" />
+    <ClCompile Include="src\CGrowthSeriesItem.cpp" />
+    <ClCompile Include="src\CInputSeries.cpp" />
+    <ClCompile Include="src\CInputSeriesContainer.cpp" />
+    <ClCompile Include="src\CLandItem.cpp" />
+    <ClCompile Include="src\CLandSeries.cpp" />
+    <ClCompile Include="src\CmdLine.cpp" />
+    <ClCompile Include="src\CObsContainer.cpp" />
+    <ClCompile Include="src\CObsItem.cpp" />
+    <ClCompile Include="src\CObsSet.cpp" />
+    <ClCompile Include="src\CPar.cpp" />
+    <ClCompile Include="src\CParContainer.cpp" />
+    <ClCompile Include="src\CParHistory.cpp" />
+    <ClCompile Include="src\CParSet.cpp" />
+    <ClCompile Include="src\CReach.cpp" />
+    <ClCompile Include="src\CReachPar.cpp" />
+    <ClCompile Include="src\CRecord.cpp" />
+    <ClCompile Include="src\CResultsGroup.cpp" />
+    <ClCompile Include="src\CResultsSet.cpp" />
+    <ClCompile Include="src\CRiverPar.cpp" />
+    <ClCompile Include="src\CStream.cpp" />
+    <ClCompile Include="src\CStructure.cpp" />
+    <ClCompile Include="src\CSubPar.cpp" />
+    <ClCompile Include="src\DATECL.cpp" />
+    <ClCompile Include="src\Eqn.cpp" />
+    <ClCompile Include="src\inca_on_the_cmd.cpp" />
+    <ClCompile Include="src\Integrat.cpp" />
+    <ClCompile Include="src\LandModel.cpp" />
+    <ClCompile Include="src\libraries\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="src\Model.cpp" />
+    <ClCompile Include="src\mysql\DbAbsSeries.cpp" />
+    <ClCompile Include="src\mysql\DbConnection.cpp" />
+    <ClCompile Include="src\MySQL\DbDepSeries.cpp" />
+    <ClCompile Include="src\MySQL\DbEffSeries.cpp" />
+    <ClCompile Include="src\mysql\DbException.cpp" />
+    <ClCompile Include="src\MySQL\DbFertSeries.cpp" />
+    <ClCompile Include="src\mysql\DbInputSeries.cpp" />
+    <ClCompile Include="src\mysql\DbModelIndexers.cpp" />
+    <ClCompile Include="src\mysql\DbModelRun.cpp" />
+    <ClCompile Include="src\mysql\DbParameterSet.cpp" />
+    <ClCompile Include="src\mysql\DbResults.cpp" />
+    <ClCompile Include="src\mysql\DbRunStatus.cpp" />
+    <ClCompile Include="src\mysql\DbStructure.cpp" />
+    <ClCompile Include="src\mysql\DbTransaction.cpp" />
+    <ClCompile Include="src\mysql\Logger.cpp" />
+    <ClCompile Include="src\ReachModel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\CAbsSeries.h" />
+    <ClInclude Include="src\include\CBaseSeries.h" />
+    <ClInclude Include="src\include\CCellPar.h" />
+    <ClInclude Include="src\include\CDepSeries.h" />
+    <ClInclude Include="src\include\CEffSeries.h" />
+    <ClInclude Include="src\include\CErrorMatrix.h" />
+    <ClInclude Include="src\include\CFertSeries.h" />
+    <ClInclude Include="src\include\CGrowthSeries.h" />
+    <ClInclude Include="src\include\CGrowthSeriesItem.h" />
+    <ClInclude Include="src\include\CInputSeries.h" />
+    <ClInclude Include="src\include\CInputSeriesContainer.h" />
+    <ClInclude Include="src\include\CLandItem.h" />
+    <ClInclude Include="src\include\CLandSeries.h" />
+    <ClInclude Include="src\include\CmdLine.h" />
+    <ClInclude Include="src\include\CObsContainer.h" />
+    <ClInclude Include="src\include\CObsItem.h" />
+    <ClInclude Include="src\include\CObsSet.h" />
+    <ClInclude Include="src\include\constant.h" />
+    <ClInclude Include="src\include\CPar.h" />
+    <ClInclude Include="src\include\CParContainer.h" />
+    <ClInclude Include="src\include\CParHistory.h" />
+    <ClInclude Include="src\include\CParSet.h" />
+    <ClInclude Include="src\include\CReach.h" />
+    <ClInclude Include="src\include\CReachPar.h" />
+    <ClInclude Include="src\include\CRecord.h" />
+    <ClInclude Include="src\include\CResultsGroup.h" />
+    <ClInclude Include="src\include\CResultsSet.h" />
+    <ClInclude Include="src\include\CRiverPar.h" />
+    <ClInclude Include="src\include\CStream.h" />
+    <ClInclude Include="src\include\CStructure.h" />
+    <ClInclude Include="src\include\CSubPar.h" />
+    <ClInclude Include="src\include\DATECL.h" />
+    <ClInclude Include="src\include\Eqn.h" />
+    <ClInclude Include="src\include\Integrat.h" />
+    <ClInclude Include="src\include\LandModel.h" />
+    <ClInclude Include="src\include\Model.h" />
+    <ClInclude Include="src\include\ReachModel.h" />
+    <ClInclude Include="src\include\utils.h" />
+    <ClInclude Include="src\include\version.h" />
+    <ClInclude Include="src\libraries\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="src\mysql\DbAbsSeries.h" />
+    <ClInclude Include="src\mysql\DbConnection.h" />
+    <ClInclude Include="src\MySQL\DbDepSeries.h" />
+    <ClInclude Include="src\MySQL\DbEffSeries.h" />
+    <ClInclude Include="src\mysql\DbException.h" />
+    <ClInclude Include="src\MySQL\DbFertSeries.h" />
+    <ClInclude Include="src\mysql\DbInputSeries.h" />
+    <ClInclude Include="src\mysql\DbModelIndexers.h" />
+    <ClInclude Include="src\mysql\DbModelRun.h" />
+    <ClInclude Include="src\mysql\DbParameterSet.h" />
+    <ClInclude Include="src\mysql\DbResults.h" />
+    <ClInclude Include="src\mysql\DbRunStatus.h" />
+    <ClInclude Include="src\mysql\DbStructure.h" />
+    <ClInclude Include="src\mysql\DbTransaction.h" />
+    <ClInclude Include="src\mysql\defines.h" />
+    <ClInclude Include="src\mysql\ExitCodes.h" />
+    <ClInclude Include="src\mysql\Logger.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
